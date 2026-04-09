@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
     <header>
         <div class="entete">
-            <a href="#"><img src="assets/logo-header.png"></a>
-            <nav>
+            <a href="#"><img class="rapture" src="assets/logo-header.png"></a>
+            <nav class="menu">
                 <a href="#">ACCUEIL</a>
                 <a href="#">LINE UP</a>
                 <a href="#">TICKET</a>
@@ -25,16 +27,100 @@
         </div>
         <section class="hero">
             <div class="titre">
-                <h1>URBAN NIGHT <span>Rap Fest</span></h1>
-                <p><strong>04 MAI & 05 MAI</strong></p>
+                <h1>URBAN NIGHT <span class="rap">Rap Fest</span></h1>
+                <p>04 MAI & 05 MAI</p>
                 <p>LYON - PARC DE GERLAND 7EME</p>
-                <div>
+                <div class="plus">
                     <a href="#" class="billet">BILLETERIE</a>
                     <a href="#" class="info">PLUS D'INFO</a>
                 </div>
             </div>
         </section>
     </header>
+    <main>
+        <section class="blabla">
+            <h2>
+                Plongez au cœur du rythme urbain
+                avec RAPture, le festival de rap qui célèbre
+                la puissance des mots, des beats et des
+                cultures qui les inspirent.
+            </h2>
+            <p>
+                Du 4 au 5 mai, vibrez au son des artistes les plus bouillants de la scène rap, entre
+                performances live, freestyles enflammés et rencontres inédites.
+                RAPture, c’est plus qu’un festival, c’est une immersion dans l’essence du hip-hop : des flows
+                tranchants, des basses profondes et une énergie brute qui réunit toutes les générations. 
+                Sur scène, les talents montants côtoient les légendes, pour un week-end où chaque rime fait
+                écho aux histoires de la rue, des rêves et de la liberté d’expression. 
+                Venez vivre trois jours de pure intensité, là où la musique, la vibe et la culture rap ne font plus
+                qu’un.
+            </p>
+        </section>
+        <section class="solo">
+            <img src="assets/section-img.png" alt="Un artiste sur scène.">
+        </section>
+        <section class="programme">
+            <h2>LINE UP</h2>
+            <ul>
+                <li>04 MAI-<strong>OMAH LAY</strong></li>
+                <li>04 MAI-<strong>WIZKID</strong></li>
+                <li>04 MAI-<strong>LIL BABY</strong></li>
+                <li>04 MAI-<strong>BURNA BOY</strong></li>
+                <li>05 MAI-<strong>KPONT</strong></li>
+                <li>05 MAI-<strong>A.C</strong></li>
+                <li>05 MAI-<strong>KEKRA</strong></li>
+                <li>05 MAI-<strong>THEODORA</strong></li>
+            </ul>
+            <a href="#" class="billeterie">BILLETERIE</a>
+        </section>
+        <section>
+            <img src="assets/spotify.png">
+            <img src="assets/applemusic.png">
+            <img src="assets/uber.png">
+            <img src="assets/deezer.png">
+            <img src="assets/motorola.png">
+        </section>
+        <section>
+            <h2>CONTACTEZ NOUS</h2>
+            <p>
+                Fill out the booking form below to ask any questions, or reach out to us directly at
+                help@raptureclouds.com with any questions or concerns.
+            </p>
+            <form>
+                <div>
+                    <label for="Fullname">Full name</label>
+                    <input type="text" id="fullname" placeholder="John Doe">
+                    <label for="Email" id="email">Email</label>
+                    <input type="email" id="email" placeholder="Example@example.com">
+                    <label for="Phone">Phone</label>
+                    <input type="tel" id="phone" placeholder="0777889900">
+                    <label for="Message">Message</label>
+                    <textarea id="message" placeholder="Message" cols="5" rows="10"></textarea>
+                    <button>CONTACT</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <p>Email</p>
+                <a href="#">help@raptureclouds.com</a>   
+            </div>
+            <form>
+                <label for="newsletter">NewsLetter</label>
+                <input type="email" id="newsletter" placeholder="Ton email">
+                <button>SUBSCRIBE</button>
+            </form>   
+        </div>
+        <div>
+            <p>Copyright © 2025 • Rapture - Music Festival</p>
+            <div>
+                <a href="#">Terms & Conditions for Event</a>
+                <a href="#">• Privacy Policy</a>
+                <a href="#">• Terms of Use</a>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>

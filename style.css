@@ -1,14 +1,13 @@
 *{
-    border: 1px solid red;
     margin: 0;
     color: white;
+    font-family: DM Sans;
 }
 
 header{
     background-image: url(assets/image-header.png);
     background-size: cover;
-    height: 100%;
-    padding: 50px 25px;
+    background-position: center;
 }
  
 .entete{
@@ -16,12 +15,19 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 20px;
+    padding: 100px 50px 0 50px;
 }
 
-nav a{
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.menu a{
+    font-size: 18px;
+    font-weight: 400;
     text-decoration: none;
-    font-size: 14px;
 }
 
 .hero{
@@ -32,18 +38,40 @@ nav a{
     justify-content: center;
 } 
 
+.titre{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
 .titre p{
-    font-size: 20px;
+    font-size: 28px;
+    font-weight: 400;
+    font-size: 28px;
 }
 
 .titre h1{
-    font-size: 40px;
-    font-style;
+    font-size: 53px;
+    font-weight: 500;
 }
 
-span{
-font-size: 80px;
-} 
+.rap{
+    font-size: 160px;
+    font-weight: 400;
+    display: block;
+}
+
+.plus{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.para{
+    font-size: 28px;
+    font-weight: bold;
+}
 
 .billet{
     color: white;
@@ -63,14 +91,62 @@ font-size: 80px;
     font-weight: bold;
 }
 
-.titre{
+.blabla{
+    background-color: black;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    height: 240px;
-    width: 410px;
-    justify-content: center;
-    gap: 20px;
+    padding: 100px 50px;
 }
 
+.blabla h2{
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.blabla p{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.solo img{
+    width: 100%;
+    height: 100%;
+}
+
+.programme{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    gap: 25px;
+}
+
+.programme h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Remplacer par position:relative et position:absolute une fois assimilé */
+
+.programme ul{
+    font-size: 28px;
+    font-weight: normal;
+    list-style: none;
+    padding-left: 0;
+    margin-right: 400px;
+}
+
+.programme li{
+    border-top: 1px dashed white;
+}
+
+.billeterie{
+    color: black;
+    background-color: white;
+    padding: 5px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
