@@ -2,6 +2,7 @@
     margin: 0;
     color: white;
     font-family: DM Sans;
+    border: 2px solid red;
 }
 
 header{
@@ -106,6 +107,7 @@ header{
 .blabla p{
     font-weight: 400;
     font-size: 20px;
+    text-align: justify;
 }
 
 .solo img{
@@ -149,4 +151,83 @@ header{
     text-decoration: none;
     font-weight: bold;
 }
+
+.partenaires{
+    background-image: url(assets/banniere-logo.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 200px;
+}
+
+.contact{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.contact span{
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+
+}
+
+.contact button{
+    font-size: 18px;
+    font-style: normal;
+    background-color: white;
+    padding: 5px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    width: fit-content;
+    margin-left: 40%;
+}
+
+.contact input,
+.contact textarea{
+    background-color: lightgray;
+}
+
+.foot{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot label,
+.foot a,
+.foot p{
+    font-size: 24px;
+    font-style: normal;
+}
+
+.foot input,
+.foot button{
+    font-size: 18px;
+    font-style: normal;
+}
+
+
 
