@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Correction : Attention à la langue de ta page, est ce qu'elle est en anglais (en) ou en français (fr) ? -->
 <html lang="en">
 
 <head>
@@ -15,6 +16,7 @@
 <body>
     <header>
         <div class="entete">
+            <!-- Correction : mets un attribut alt à ton image pour assurer l'accessibilité. Exemple : alt="Logo du festival RAPture"  -->
             <a href="#"><img class="rapture" src="assets/logo-header.png"></a>
             <nav class="menu">
                 <a href="#">ACCUEIL</a>
@@ -27,9 +29,14 @@
         <section class="hero">
             <div class="titre">
                 <h1>URBAN NIGHT <span class="rap">Rap Fest</span></h1>
+                <!-- Correction : La balise strong a un sens donc on préférera utiliser du css pur dans ce cas. 
+                Strong permet de forcer le référencement sur un certain texte. -->
                 <p><strong>04 MAI & 05 MAI</strong></p>
                 <p>LYON - PARC DE GERLAND 7EME</p>
+                <!--Correction : utilise des noms plus explicites pour tes classes comme "div-boutons-hero" par exemple-->
                 <div class="plus">
+                    <!--Correction : Pareil ici tu peux préciser que pour le bouton billeterie,
+                    c'est le "cta-principal" et l'autre c'est le "cta-secondaire"-->
                     <a href="#" class="billet">BILLETERIE</a>
                     <a href="#" class="info">PLUS D'INFO</a>
                 </div>
@@ -48,15 +55,17 @@
                 Du 4 au 5 mai, vibrez au son des artistes les plus bouillants de la scène rap, entre
                 performances live, freestyles enflammés et rencontres inédites.
                 RAPture, c’est plus qu’un festival, c’est une immersion dans l’essence du hip-hop : des flows
-                tranchants, des basses profondes et une énergie brute qui réunit toutes les générations. 
+                tranchants, des basses profondes et une énergie brute qui réunit toutes les générations.
                 Sur scène, les talents montants côtoient les légendes, pour un week-end où chaque rime fait
-                écho aux histoires de la rue, des rêves et de la liberté d’expression. 
+                écho aux histoires de la rue, des rêves et de la liberté d’expression.
                 Venez vivre trois jours de pure intensité, là où la musique, la vibe et la culture rap ne font plus
                 qu’un.
             </p>
         </section>
+        <!-- Correction : dans notre cas l'image n'a pas forcément besoin d'être dans le html parce que sémentiquement elle n'est pas pertinente.
+        On préférera donc la mettre en background de la section. -->
         <section class="solo">
-            <img src="assets/section-img.png" alt="Un artiste sur scène.">
+            <img src="assets/section-img.png" alt="Un artiste sur scène">
         </section>
         <section class="programme">
             <h2>LINE UP</h2>
@@ -104,6 +113,7 @@
         <div class="foot">
             <div>
                 <p>Email</p>
+                <!-- Correction : on pourra utiliser un lien avec mailto dans le href pour rediriger directement vers les mails. -->
                 <a href="#">help@raptureclouds.com</a>
             </div>
             <form>

@@ -1,5 +1,7 @@
 *{
     margin: 0;
+    /* Correction : Attention à bien mettre les "" et tous les éléments suivants dans la font-family.
+    Ex : font-family: "DM Sans", sans-serif; pour assurer que le texte s'affichera en minimum en sans-serif.*/
     font-family: DM sans;
     color: white;
 }
@@ -73,6 +75,11 @@ header{
     font-weight: bold;
 }
 
+/* Correction : plusieurs éléments sont en commun dans les deux boutons. 
+Tu peux donc créer une classe bouton qui contiendra les propriétés de style qui ont les mêmes valeurs.
+Les classes différentes contiendront les propriétés qui ont des valeurs différentes. 
+Tu appliqueras ensuite la classe "button" et la classe "billet" au bouton billeterie
+et la classe "button" et la classe "info" à plus d'info.*/
 .billet{
     color: white;
     background-color: black;
@@ -83,7 +90,7 @@ header{
 }
 
 .info{
-     color: black;
+    color: black;
     background-color: white;
     padding: 5px 25px;
     border-radius: 4px;
@@ -91,6 +98,8 @@ header{
     font-weight: bold;
 }
 
+/* Correction : Plutôt que d'utiliser un padding, 
+comment est ce qu'on peut s'assurer que le texte prendra exactement la bonne partie de l'écran et sera centré ? */
 .blabla{
     background-color: black;
     display: flex;
@@ -103,6 +112,8 @@ header{
     font-weight: normal;
 }
 
+/* Correction : attention le text n'est pas justifié à gauche et à droite sur la maquette.
+Il est justifié uniquement à gauche. */
 .blabla p{
     font-weight: 400;
     font-size: 20px;
@@ -111,7 +122,7 @@ header{
 
 .solo img{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .programme{
@@ -119,6 +130,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* Correction : à nouveau on préférera utiliser un container plutôt que le padding. */
     padding: 50px;
     gap: 25px;
 }
@@ -133,16 +145,20 @@ header{
     font-weight: normal;
     list-style: none;
     padding-left: 0;
+    /* Correction : Pourquoi une margin de 400px à droite ? */
     margin-right: 400px;
-
 }
 
+/* Correction : Tu peux mettre directement le border-top sur les li et le border-bottom, uniquement sur .theo.
+Il faudra simplement retoucher tes width précédentes pour être sûr qu'elle prenne bien tout l'espace demandé. */
 ul li{
     position: relative;
     padding: 10px 0;
-    
+    width: 100%; 
+    border-top: 1px dashed white;
 }
 
+/* Correction : ces deux parties sont donc trop lourdes, complexes et source d'erreurs pour le besoin */
 ul li::before {
     content: "";
     position: absolute;
@@ -161,6 +177,8 @@ ul li::before {
     border-bottom: 1px dashed white;
     }
     
+/* Correction : Ce bouton ressemble beaucoup à un autre bouton déjà créé. 
+Pourquoi créer une nouvelle classe ? */
 .billeterie{
     color: black;
     background-color: white;
@@ -201,16 +219,15 @@ ul li::before {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
 }
 
 .contact span{
     background-color: goldenrod;
     color: black;
     font-weight: bold;
-
 }
 
+/* Correction : ce bouton aussi ressemble beaucou à un bouton déjà créé dans la page. */
 .contact button{
     font-size: 18px;
     font-style: normal;
@@ -223,6 +240,7 @@ ul li::before {
     margin-left: 40%;
 }
 
+/* Correction : attention à aussi modifier le background color pour être sûr de garder les contrastes. */
 .contact input,
 .contact textarea{
     background-color: lightgray;
@@ -248,9 +266,11 @@ ul li::before {
     font-size: 24px;
     font-style: normal;
 }
+
 .news{
     color: goldenrod;
 }
+
 .foot input{
     font-size: 18px;
     font-style: normal;
